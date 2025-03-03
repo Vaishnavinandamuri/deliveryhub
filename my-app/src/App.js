@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';  // Ensure ProductList is properly imported
 import Cart from './components/ProductItem';
+import Ecommerce from './components/Ecommerce';
 import './App.css';
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />  // Cart route
         {/* Additional routes for Party Rentals */}
         <Route path="/party-rentals" element={<div>SriKrishnaParty Rentals Page</div>} />
+        <Route path="/ecommerce" element={<Ecommerce />} />  // Ecommerce route
       </Routes>
     </Router>
   );
